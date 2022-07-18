@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fav-photos.component.css']
 })
 export class FavPhotosComponent implements OnInit {
-  photosTitle = 'Photo/Image Section Title Here';
-  image1 = 'https://www.launchcode.org/assets/icons/target-00c7a0bc7776901e3c5cdc4c36c465f19e41a249bc7267a595f0bfa14ab944b7.png';
-  image2 = '';
-  image3 = '';
+  photosTitle = 'Random Moon Knight Photos';
+  image1 = 'https://upload.wikimedia.org/wikipedia/en/f/fd/Marc_Spector_39.jpg';
+  image2 = 'https://static.wikia.nocookie.net/disney/images/a/a6/Moon_Knight_Profile.jpg';
+  image3 = 'https://static.wikia.nocookie.net/marvelcinematicuniverse/images/e/ea/Moon_Knight_Poster_Textless.png';
+  
 
   constructor() { }
 
