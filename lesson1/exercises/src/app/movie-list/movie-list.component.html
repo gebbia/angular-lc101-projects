@@ -1,9 +1,26 @@
 <div class="movies">
    <h3>Movies to Watch</h3>
    <ol>
-      <li>{{movies[0]}}</li>
+      <!-- Just like a for loop in JavaScript requires a specific syntax in order to operate, 
+      loops in Angular must follow a set of rules.  -->
+      <h1><li *ngFor = "let movie of movies">{{movie}}</li></h1>
+      
+      <!-- instead of the multiple lines and tags to display the four movies,
+      *ngFor now iterates through the movie list and displays all 4 movies -->
+      <!-- <li>{{movies[0]}}</li>
       <li>{{movies[1]}}</li>
       <li>{{movies[2]}}</li>
-      <li>{{movies[3]}}</li>
+      <li>{{movies[3]}}</li> -->
    </ol>
 </div>
+
+<!-- Some items to note:
+
+    Structural directives all begin with the * symbol.
+    The string "let movie of movies" provides the instructions for running the loop.
+        The let keyword declares the movie variable.
+        of movies sets movie equal to the first element of the movies array. Each iteration of the loop sets movie equal to the next title in the array.
+    The *ngFor statement is placed INSIDE the <li> tag.
+    {{movie}} is the placeholder for the current value of movie.
+
+By placing the *ngFor statement inside the tag, the loop generates multiple <li></li> elements. Each iteration adds a new list item to the HTML code, one for each title in the movies array. -->
